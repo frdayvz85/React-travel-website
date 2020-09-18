@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Site is Live.
-URL:[React Travel Website](https:react-travel-website.netlify.app "React Travel Website")
+URL:[React Travel Website](https://react-travel-website.netlify.app "React Travel Website")
 
 ## Available Scripts
 
