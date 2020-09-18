@@ -165,7 +165,7 @@
 @media screen and (max-width: 760px) {
   .login, .register {
     padding:2rem;
-    width:80%;
+    width:90%;
   }
   .login-btn, .register-btn {
     width:40%;

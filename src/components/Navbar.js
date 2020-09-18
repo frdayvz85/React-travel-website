@@ -80,8 +80,10 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+          <div className="sign-register">
           {button && <ButtonLogin buttonStyle='btn--primary'>Login</ButtonLogin>}
           {button && <ButtonSignUp buttonStyle='btn--outline'>Sign Up</ButtonSignUp>}
+          </div>
         </div>
       </nav>
     </>

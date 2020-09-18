@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className='footer-container'>
+    <div className="footer">
+      <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
           Join the Flight newsletter to receive our best vacation deals
@@ -40,16 +41,7 @@ function Footer() {
             <Link to='/'>Support</Link>
             <Link to='/'>Destinations</Link>
             <Link to='/'>Sponsorships</Link>
-          </div>
-        </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div>
+          </div>         
           <div class='footer-link-items'>
             <h2>Social Media</h2>
             <Link to='/'>Instagram</Link>
@@ -67,7 +59,9 @@ function Footer() {
               <i class='fas fa-plane' />
             </Link>
           </div>
-          <small class='website-rights'>TRAVEL © 2020</small>
+          <div className="site-rights">
+          <small class='site-right'>CREATED BY <a href="https://ferideyvazov.herokuapp.com/">FERİD</a> © 2020</small>
+          </div>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
@@ -112,6 +106,7 @@ function Footer() {
           </div>
         </div>
       </section>
+    </div>
     </div>
   );
 }

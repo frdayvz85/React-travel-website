@@ -1,34 +1,36 @@
 .cards {
-    padding: 4rem;
     background: #fff;
   }
   
   h1 {
     text-align: center;
+    margin-top:2rem;
   }
   
   .cards__container {
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 1120px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
   
   .cards__wrapper {
     position: relative;
-    margin: 50px 0 45px;
+    margin: 50px 0 0;
   }
   
   .cards__items {
     margin-bottom: 24px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap:20px;
+    list-style-type: none;
   }
   
   .cards__item {
-    display: flex;
-    flex: 1;
-    margin: 0 1rem;
+    
+    /* margin: 0 1rem; */
     border-radius: 10px;
   }
   
@@ -114,7 +116,7 @@
   
   @media only screen and (max-width: 1024px) {
     .cards__item {
-      margin-bottom: 2rem;
+      margin-bottom: 0;
     }
   }
   @media only screen and (max-width: 540px) {
