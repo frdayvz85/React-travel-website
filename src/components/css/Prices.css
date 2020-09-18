@@ -1,0 +1,71 @@
+.prices-container {
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+}
+.price-boxs {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap:30px;
+    margin-top: 50px;
+}
+.price {
+    /* background-color: lightcoral; */
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    
+}
+.price-type-header {
+    background-color: rgb(10, 10, 151);
+    color:#fff;
+    padding:2rem 0;
+    border-bottom-left-radius: 35% 50%;
+    border-bottom-right-radius: 35% 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.price-type-header>h2 {
+    margin:10px 0;
+}
+.price-p {
+    font-size:24px;
+}
+.price-property {
+    padding:2rem 0;
+}
+.price-lists {
+    list-style-type: none;
+}
+.price-lists>li {
+    padding: 1rem 0;
+}
+.price-lists li:last-child {
+    margin: 0 0 1rem 0;
+}
+.select-paket {
+    text-decoration: none;
+    background: blue;
+    padding:0.6rem 3rem;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out background;
+    color:#fff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.select-paket:hover {
+    background: rgb(10, 10, 151);
+}
+.price-boxs .price:nth-child(2) {
+    border:1px solid rgb(10, 10, 151);
+    transform: scale(1.105);
+}
+@media only screen and (max-width: 700px) {
+    .prices-container {
+        width:80%;
+    }
+    .price-boxs {
+        grid-gap:60px;
+    }
+}
